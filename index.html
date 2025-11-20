@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Michael Maglinao - Professional Credentials</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            height: 100%;
+        }
+        
+        .certification-card {
+            transition: all 0.3s ease;
+        }
+        
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .badge-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #581c87 100%);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-full">
+
+    <!-- Header Section -->
+    <div class="header-gradient text-white py-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center justify-center w-20 h-20 bg-white bg-opacity-20 rounded-full mb-6">
+                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Jan Michael D. Maglinao, CPA, CMA, CTT</h1>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">This page provides an overview of my credentials relevant to my experience as an accounting professional, demonstrating my commitment to continuous learning and improvement, as well as excellence in service to my stakeholders.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        
+        <!-- Stats Section -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div id="active-licenses-stat" class="text-3xl font-bold text-blue-600 mb-2">0</div>
+                <div class="text-gray-600">Active Licenses & Accreditations</div>
+            </div>
+            <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div id="valid-certifications-stat" class="text-3xl font-bold text-purple-600 mb-2">0</div>
+                <div class="text-gray-600">Valid Certifications</div>
+            </div>
+            <div class="bg-white rounded-xl p-6 text-center shadow-lg">
+                <div id="experience-stat" class="text-3xl font-bold text-green-600 mb-2">0+</div>
+                <div class="text-gray-600">Years Experience</div>
+            </div>
+        </div>
+
+        <!-- Licenses Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+                <div class="badge-icon w-8 h-8 rounded-lg mr-3 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                         <path d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2V7a5 5 0 00-5-5zm0 16a3 3 0 110-6 3 3 0 010 6z" clip-rule="evenodd" fill-rule="evenodd"></path>
+                    </svg>
+                </div>
+                Professional Licenses and Accreditations
+            </h2>
+            <div id="licenses-container" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Licenses will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 flex items-center">
+                <div class="badge-icon w-8 h-8 rounded-lg mr-3 flex items-center justify-center">
+                   <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                Industry Certifications
+            </h2>
+            <div id="certifications-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Certifications will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <!-- Action Link -->
+        <div class="text-center">
+            <p class="text-gray-600">
+                To see a complete list of licenses & certifications, refer to:
+                <a href="https://www.linkedin.com/in/jm-maglinao-cpa-cma/details/certifications/" target="_blank" class="text-blue-600 hover:underline font-semibold">
+                    LinkedIn Profile
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-16">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-400">Professional credentials verified and maintained according to industry standards</p>
+            <p id="last-updated" class="text-gray-500 text-sm mt-2">Last updated: </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            // --- DATA MANAGEMENT ---
+            // UPDATE: Added BIR Accreditation and updated CPA Practice Expiry
+            const licenses = [
+                { 
+                    title: 'Certified Public Accountant (CPA)', 
+                    issuer: 'Professional Regulation Commission', 
+                    number: '179671', 
+                    issued: 'Jun 2017', 
+                    expires: null, 
+                    borderColor: 'border-blue-500' 
+                },
+                { 
+                    title: 'Certified Management Accountant (CMA)', 
+                    issuer: 'IMA | Institute of Management Accountants', 
+                    number: '10779270', 
+                    issued: 'Apr 2023', 
+                    expires: null, 
+                    borderColor: 'border-green-500' 
+                },
+                { 
+                    title: 'Certified Tax Technician', 
+                    issuer: 'Philippine Association of Certified Tax Technicians', 
+                    number: '10270', 
+                    issued: 'Jul 2024', 
+                    expires: null, 
+                    borderColor: 'border-purple-500' 
+                },
+                { 
+                    title: 'Accredited CPA in Public Practice', 
+                    issuer: 'Professional Regulation Commission', 
+                    number: '10039', 
+                    issued: 'Sep 2025', 
+                    expires: 'Sep 2027',  // Updated as requested
+                    borderColor: 'border-orange-500' 
+                },
+                { 
+                    title: 'Accredited Accounting Teacher', 
+                    issuer: 'Professional Regulation Commission', 
+                    number: 'F25-1550', 
+                    issued: 'Oct 2025', 
+                    expires: 'Sep 2028', 
+                    borderColor: 'border-indigo-500' 
+                },
+                { 
+                    title: 'Accredited Tax Practitioner', 
+                    issuer: 'Bureau of Internal Revenue', 
+                    number: '09-000086-001-2025', 
+                    issued: 'Nov 2025', 
+                    expires: 'Nov 2028', // Added new credential
+                    borderColor: 'border-rose-600' 
+                },
+            ];
+
+            const certifications = [
+                { title: 'CFI Corporate Finance Foundations', issuer: 'Corporate Finance Institute® (CFI)', expires: null, iconColor: 'blue' },
+                { title: 'How to Use Generative AI', issuer: 'LinkedIn', expires: null, iconColor: 'purple' },
+                { title: 'Agile Project Leadership', issuer: 'LinkedIn', expires: null, iconColor: 'red' },
+                { title: 'Foundations of Treasury Management', issuer: 'LinkedIn', expires: null, iconColor: 'green' },
+                { title: 'Financial Analysis: Projections', issuer: 'LinkedIn', expires: null, iconColor: 'yellow' },
+                { title: 'Executive Leadership', issuer: 'LinkedIn', expires: null, iconColor: 'indigo' },
+            ];
+
+            // --- UTILITY FUNCTIONS ---
+            const getStatus = (expiryDateString) => {
+                if (!expiryDateString) {
+                    return { text: 'Active', color: 'green' };
+                }
+                
+                const today = new Date();
+                const expiryDate = new Date(expiryDateString);
+                // Set to end of month for expiry logic validity
+                expiryDate.setMonth(expiryDate.getMonth() + 1, 0); 
+
+                if (expiryDate < today) {
+                    return { text: 'Expired', color: 'red' };
+                }
+                
+                const renewalDate = new Date(expiryDate);
+                renewalDate.setMonth(renewalDate.getMonth() - 6);
+                
+                if (renewalDate < today) {
+                    return { text: 'Renewal Due', color: 'yellow' };
+                }
+                
+                return { text: 'Active', color: 'green' };
+            };
+
+            const statusColors = {
+                green: 'bg-green-100 text-green-800',
+                yellow: 'bg-yellow-100 text-yellow-800',
+                red: 'bg-red-100 text-red-800',
+            };
+
+            // --- RENDER FUNCTIONS ---
+            const renderLicenses = () => {
+                const container = document.getElementById('licenses-container');
+                let activeCount = 0;
+                
+                licenses.forEach(license => {
+                    const status = getStatus(license.expires);
+                    if (status.text === 'Active' || status.text === 'Renewal Due') {
+                        activeCount++;
+                    }
+                    
+                    const cardHTML = `
+                        <div class="certification-card bg-white rounded-xl p-6 shadow-lg border-l-4 ${license.borderColor}">
+                            <div class="flex items-start justify-between mb-4">
+                                <div class="flex-1 pr-4">
+                                    <h3 class="text-xl font-semibold text-gray-800 mb-2">${license.title}</h3>
+                                    <p class="text-gray-600 mb-2">${license.issuer}</p>
+                                    <p class="text-sm text-gray-500">Credential ID: ${license.number}</p>
+                                </div>
+                                <div class="${statusColors[status.color]} px-3 py-1 rounded-full text-sm font-medium whitespace-nowrap">${status.text}</div>
+                            </div>
+                            <div class="flex justify-between text-sm text-gray-500 border-t pt-4 mt-4">
+                                <span>Issued: ${license.issued}</span>
+                                <span>${license.expires ? 'Expires: ' + license.expires : 'Maintained'}</span>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += cardHTML;
+                });
+                return activeCount;
+            };
+
+            const renderCertifications = () => {
+                const container = document.getElementById('certifications-container');
+                let validCount = 0;
+                
+                certifications.forEach(cert => {
+                    const status = getStatus(cert.expires); 
+                    if (status.text === 'Active' || status.text === 'Renewal Due') {
+                        validCount++;
+                    }
+
+                    const cardHTML = `
+                        <div class="certification-card bg-white rounded-xl p-6 shadow-lg flex flex-col">
+                            <div class="text-center mb-4 flex-grow">
+                                <div class="w-16 h-16 bg-${cert.iconColor}-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                                    <svg class="w-8 h-8 text-${cert.iconColor}-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-800 mb-2">${cert.title}</h3>
+                                <p class="text-gray-600 text-sm mb-3">${cert.issuer}</p>
+                                <div class="${statusColors[status.color]} px-3 py-1 rounded-full text-xs font-medium inline-block">${status.text}</div>
+                            </div>
+                            <div class="text-center text-sm text-gray-500 border-t pt-4 mt-auto">
+                                <p>${cert.expires ? 'Expires: ' + cert.expires : 'No Expiration'}</p>
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += cardHTML;
+                });
+                return validCount;
+            };
+
+            const updateStats = (activeLicenses, validCerts) => {
+                document.getElementById('active-licenses-stat').textContent = activeLicenses;
+                document.getElementById('valid-certifications-stat').textContent = validCerts;
+            };
+            
+            const updateExperienceStat = () => {
+                const startDate = new Date('2017-06-01');
+                const today = new Date();
+                let years = today.getFullYear() - startDate.getFullYear();
+                const m = today.getMonth() - startDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < startDate.getDate())) {
+                    years--;
+                }
+                document.getElementById('experience-stat').textContent = `${years}+`;
+            };
+
+            const updateFooter = () => {
+                const today = new Date();
+                const month = today.toLocaleString('default', { month: 'long' });
+                const year = today.getFullYear();
+                document.getElementById('last-updated').textContent = `Last updated: ${month} ${year}`;
+            };
+
+            // --- INITIALIZATION ---
+            const totalCertificationCount = 24; // This is hardcoded based on your LinkedIn count
+            const activeLicensesCount = renderLicenses();
+            renderCertifications();
+            
+            updateStats(activeLicensesCount, totalCertificationCount);
+            updateExperienceStat();
+            updateFooter();
+        });
+    </script>
+</body>
+</html>
