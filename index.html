@@ -46,7 +46,7 @@
                     <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
                 </svg>
             </div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Jan Michael D. Maglinao, CPA, CMA, CTT</h1>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Jan Michael D. Maglinao, CPA, CMA, CTT, CISA</h1>
             <p class="text-xl text-blue-100 max-w-3xl mx-auto">This page provides an overview of my credentials relevant to my experience as an accounting professional, demonstrating my commitment to continuous learning and improvement, as well as excellence in service to my stakeholders.</p>
         </div>
     </div>
@@ -124,8 +124,15 @@
         document.addEventListener('DOMContentLoaded', function () {
             
             // --- DATA MANAGEMENT ---
-            // UPDATE: Added BIR Accreditation and updated CPA Practice Expiry
             const licenses = [
+                 { 
+                    title: 'Certified Information Systems Auditor (CISA)', 
+                    issuer: 'ISACA', 
+                    number: '262978529', 
+                    issued: 'Jan 2026', 
+                    expires: 'Jan 2030', 
+                    borderColor: 'border-teal-500' // New entry
+                },
                 { 
                     title: 'Certified Public Accountant (CPA)', 
                     issuer: 'Professional Regulation Commission', 
@@ -155,7 +162,7 @@
                     issuer: 'Professional Regulation Commission', 
                     number: '10039', 
                     issued: 'Sep 2025', 
-                    expires: 'Sep 2027',  // Updated as requested
+                    expires: 'Sep 2027', 
                     borderColor: 'border-orange-500' 
                 },
                 { 
@@ -171,12 +178,13 @@
                     issuer: 'Bureau of Internal Revenue', 
                     number: '09-000086-001-2025', 
                     issued: 'Nov 2025', 
-                    expires: 'Nov 2028', // Added new credential
+                    expires: 'Nov 2028', 
                     borderColor: 'border-rose-600' 
                 },
             ];
 
             const certifications = [
+                { title: 'The Cybersecurity Threat Landscape', issuer: 'LinkedIn', expires: null, iconColor: 'red' }, // New
                 { title: 'CFI Corporate Finance Foundations', issuer: 'Corporate Finance Institute® (CFI)', expires: null, iconColor: 'blue' },
                 { title: 'How to Use Generative AI', issuer: 'LinkedIn', expires: null, iconColor: 'purple' },
                 { title: 'Agile Project Leadership', issuer: 'LinkedIn', expires: null, iconColor: 'red' },
@@ -304,7 +312,7 @@
             };
 
             // --- INITIALIZATION ---
-            const totalCertificationCount = 24; // This is hardcoded based on your LinkedIn count
+            const totalCertificationCount = 32; // Updated based on background doc count
             const activeLicensesCount = renderLicenses();
             renderCertifications();
             
